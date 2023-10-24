@@ -1,0 +1,71 @@
+{
+  "name": "@yarn-tool/resolve-package",
+  "version": "2.0.4",
+  "description": "resolve package root and package.json paths , work on node 17 too",
+  "keywords": [
+    "resolve",
+    "package",
+    "json",
+    "root",
+    "npm",
+    "entry",
+    "find",
+    "up",
+    "find-up",
+    "findup",
+    "look-up",
+    "look",
+    "file",
+    "search",
+    "match",
+    "parent",
+    "parents",
+    "folder",
+    "directory",
+    "walk",
+    "walking",
+    "path"
+  ],
+  "homepage": "https://github.com/bluelovers/ws-yarn-workspaces/tree/master/packages/@yarn-tool/resolve-package#readme",
+  "bugs": {
+    "url": "https://github.com/bluelovers/ws-yarn-workspaces/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluelovers/ws-yarn-workspaces.git",
+    "directory": "packages/@yarn-tool/resolve-package"
+  },
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "npx nyc yarn run test",
+    "lint": "npx eslint **/*.ts",
+    "test": "echo \"Error: no test specified\"",
+    "test:jest": "jest --passWithNoTests",
+    "test:jest:snapshot": "yarn run test:jest -- -u",
+    "test:mocha": "npx mocha --require ts-node/register \"!(node_modules)/**/*.{test,spec}.{ts,tsx}\"",
+    "test:snapshot": "yarn run test -- -u",
+    "npm:publish": "npm publish",
+    "preversion": "yarn run test",
+    "prepublish:lockfile": "npx sync-lockfile .",
+    "prepublishOnly": "echo prepublishOnly",
+    "postpublish_": "git commit -m \"chore(release): publish\" .",
+    "ncu": "npx yarn-tool ncu -u",
+    "sort-package-json": "npx yarn-tool sort",
+    "tsc:default": "tsc -p tsconfig.json",
+    "tsc:esm": "tsc -p tsconfig.esm.json"
+  },
+  "dependencies": {
+    "pkg-dir": "<6 >=5",
+    "tslib": ">=2",
+    "upath2": "^3.1.15"
+  },
+  "devDependencies": {
+    "@ts-type/package-dts": "^2.0.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "fccc2913440df31b04f2971e479fbe1d4c3a7a0c"
+}

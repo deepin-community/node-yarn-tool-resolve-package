@@ -1,0 +1,7 @@
+version=4
+# It is not recommended use npmregistry. Please investigate more.
+# Origin url: https://github.com/bluelovers/ws-yarn-workspaces
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,pgpmode=none" \
+ https://registry.npmjs.org/@yarn-tool/resolve-package \
+ https://registry.npmjs.org/\@yarn-tool/resolve-package/-/resolve-package-(\d[\d\.]*)@ARCHIVE_EXT@
