@@ -1,5 +1,33 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-yarn-tool-resolve-package (2.0.4-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
+  * New upstream version 2.0.4
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Yadd <yadd@debian.org>  Sat, 17 Sep 2022 18:22:34 +0200
+
+node-yarn-tool-resolve-package (2.0.2-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 2.0.2
+
+ -- Yadd <yadd@debian.org>  Mon, 22 Aug 2022 10:07:23 +0200
+
+node-yarn-tool-resolve-package (1.0.46-3) unstable; urgency=medium
+
+  * Team upload
+  * Trim trailing whitespace.
+  * Declare compliance with policy 4.6.1
+
+ -- Yadd <yadd@debian.org>  Fri, 12 Aug 2022 13:47:51 +0200
+
+node-yarn-tool-resolve-package (1.0.46-2) unstable; urgency=medium
+
+  * Remove boilerplate from debian/control.
+
+ -- Roland Mas <lolando@debian.org>  Thu, 12 May 2022 21:41:25 +0200
+
+node-yarn-tool-resolve-package (1.0.46-1) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Roland Mas <lolando@debian.org>  Thu, 28 Apr 2022 22:49:07 +0200

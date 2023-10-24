@@ -1,15 +1,27 @@
-Source: template-repository
-Section: unknown
+Source: node-yarn-tool-resolve-package
+Section: javascript
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Roland Mas <lolando@debian.org>
+Testsuite: autopkgtest-pkg-nodejs
+Build-Depends:
+ debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-pkg-dir (<< 6), node-pkg-dir (>= 5)
+ , node-tslib (>= 2.3.1)
+ , node-upath2 (>= 3.1.12)
+Standards-Version: 4.6.1
+Homepage: https://github.com/bluelovers/ws-yarn-workspaces/tree/master/packages/@yarn-tool/resolve-package#readme
+Vcs-Git: https://salsa.debian.org/js-team/node-yarn-tool-resolve-package.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-yarn-tool-resolve-package
+Rules-Requires-Root: no
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: node-yarn-tool-resolve-package
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , node-pkg-dir (<< 6), node-pkg-dir (>= 5)
+ , node-tslib (>= 2.3.1)
+ , node-upath2 (>= 3.1.12)
+Description: Resolve package root and package.json paths
+ Node.js is an event-based server-side JavaScript engine.
